@@ -18,7 +18,7 @@ export const siteConfig = {
   bio: "RT Studio is a digital agency specialising in website design, property listing development, SEO, and ongoing management for the real estate industry.",
 
   /** Contact email shown on the contact page and in the footer */
-  email: "hello@rtstudio.design",
+  email: "rtstudio82@gmail.com",
 
   /** Location string shown in the footer */
   location: "Real Estate Digital Agency · Worldwide",
@@ -31,7 +31,7 @@ export const siteConfig = {
    * Set any value to "" to hide that link across the whole site.
    */
   socials: {
-    instagram: "https://instagram.com/rtstudio",
+    instagram: "https://www.instagram.com/rtstudio82?exln=bzY2dGpub2IyOTN3",
     x: "https://x.com/rtstudio",
     linkedin: "https://linkedin.com/company/rt-studio",
     github: "",
@@ -42,7 +42,7 @@ export const siteConfig = {
    * Cal.com booking namespace — e.g. "yourname/30min".
    * Set to "" to hide the booking section on the contact page.
    */
-  calLink: "rtstudio/30min",
+  calLink: "",
 
   /** Canonical site URL used for SEO */
   siteUrl: "https://rtstudio.design",

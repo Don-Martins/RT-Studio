@@ -151,108 +151,6 @@ const designPackages = [
   },
 ];
 
-const maintenanceServices = [
-  {
-    name: "Basic Care",
-    price: "$29",
-    period: "month",
-    description: "Essential upkeep and security monitoring for smaller agency sites.",
-    features: [
-      "Regular website backups",
-      "Software and plugin updates",
-      "Basic security checks",
-      "Website availability monitoring",
-      "Minor content updates",
-    ],
-    cta: "Select Basic Care",
-    featured: false,
-  },
-  {
-    name: "Business Care",
-    price: "$59",
-    period: "month",
-    badge: "Most Popular",
-    description: "Active maintenance and regular updates for active property portfolios.",
-    features: [
-      "Everything in Basic Care",
-      "Performance monitoring",
-      "Broken link checks",
-      "More frequent backups",
-      "Up to 2 hours of minor website updates",
-      "Priority support",
-    ],
-    cta: "Select Business Care",
-    featured: true,
-  },
-  {
-    name: "Complete Care",
-    price: "$99",
-    period: "month",
-    description: "Full-service management for busy agencies with frequent listing changes.",
-    features: [
-      "Everything in Business Care",
-      "Up to 5 hours of minor website updates",
-      "Property listing updates",
-      "More frequent monitoring",
-      "Monthly website health report",
-      "Priority technical support",
-    ],
-    cta: "Select Complete Care",
-    featured: false,
-  },
-];
-
-const seoServices = [
-  {
-    name: "SEO Essentials",
-    price: "$99",
-    period: "month",
-    description: "Foundational search optimisation to establish local search presence.",
-    features: [
-      "Keyword research",
-      "On-page SEO improvements",
-      "Technical SEO checks",
-      "Search performance monitoring",
-      "Monthly SEO report",
-    ],
-    cta: "Select SEO Essentials",
-    featured: false,
-  },
-  {
-    name: "SEO Growth",
-    price: "$199",
-    period: "month",
-    badge: "Most Popular",
-    description: "Proactive local rankings boost to attract motivated buyers and sellers.",
-    features: [
-      "Everything in SEO Essentials",
-      "Content optimisation",
-      "Local SEO improvements",
-      "Google Business Profile optimisation",
-      "Competitor monitoring",
-      "Monthly performance report",
-    ],
-    cta: "Select SEO Growth",
-    featured: true,
-  },
-  {
-    name: "SEO Authority",
-    price: "$349+",
-    period: "month",
-    description: "Comprehensive dominance for competitive regional property markets.",
-    features: [
-      "Everything in SEO Growth",
-      "Regional search expansion",
-      "In-depth content strategy & property guides",
-      "Backlink & digital PR acquisition",
-      "Conversion rate optimisation for listings",
-      "Bi-weekly strategy consultation",
-    ],
-    cta: "Select SEO Authority",
-    featured: false,
-  },
-];
-
 const testimonials = [
   {
     quote:
@@ -434,7 +332,6 @@ function TestimonialCard({ t }: { t: (typeof testimonials)[0] }) {
 /* ── Page ───────────────────────────────────────────────────── */
 function Index() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
-  const [activeServiceTab, setActiveServiceTab] = useState<"maintenance" | "seo">("maintenance");
 
   return (
     <SiteShell
@@ -480,8 +377,8 @@ function Index() {
               </h1>
 
               <p className="mt-5 sm:mt-6 text-[#F7F5F0]/90 text-base sm:text-lg lg:text-xl leading-relaxed font-sans max-w-xl">
-                We create beautiful, functional websites that help real estate businesses present
-                their properties professionally and stand out online.
+                We help real estate businesses turn their online presence into a powerful platform
+                for showcasing properties and attracting serious buyers.
               </p>
 
               <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4">
@@ -754,130 +651,28 @@ function Index() {
           })}
         </div>
 
-        {/* ── Ongoing Website Services Sub-section ───────────── */}
-        <div className="mt-16 pt-12 border-t border-border">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
-            <div>
-              <p className="text-xs font-semibold tracking-widest uppercase text-body mb-2">
-                Post-Launch Support & Growth
-              </p>
-              <h3 className="text-2xl sm:text-3xl font-normal tracking-tight">
-                Ongoing Website Services
-              </h3>
-              <p className="mt-2 text-body text-sm max-w-xl leading-relaxed">
-                Your website needs attention even after launch. We offer ongoing services to keep it
-                secure, updated and performing properly.
-              </p>
-            </div>
-
-            {/* Category tabs */}
-            <div className="inline-flex p-1 rounded-xl bg-background border border-border shrink-0 self-start md:self-auto">
-              <button
-                onClick={() => setActiveServiceTab("maintenance")}
-                className={`px-4 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all ${
-                  activeServiceTab === "maintenance"
-                    ? "bg-[#142B25] text-white shadow-sm"
-                    : "text-body hover:text-foreground"
-                }`}
-              >
-                Website Maintenance
-              </button>
-              <button
-                onClick={() => setActiveServiceTab("seo")}
-                className={`px-4 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all ${
-                  activeServiceTab === "seo"
-                    ? "bg-[#142B25] text-white shadow-sm"
-                    : "text-body hover:text-foreground"
-                }`}
-              >
-                SEO Services
-              </button>
-            </div>
+        {/* Need something different? Custom Quote */}
+        <div className="mt-12 rounded-2xl bg-background border border-border p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+          <div className="max-w-xl">
+            <span className="text-xs font-semibold uppercase tracking-wider text-[#142B25] mb-1.5 block">
+              Tailored Solutions
+            </span>
+            <h4 className="text-lg sm:text-xl font-normal text-foreground">
+              Need something different?
+            </h4>
+            <p className="mt-1.5 text-xs sm:text-sm text-body leading-relaxed">
+              Every real estate business has different needs. If you require a custom website,
+              additional functionality or a combination of services, let's discuss a solution that
+              works for your business.
+            </p>
           </div>
-
-          {/* Cards for active ongoing service */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {(activeServiceTab === "maintenance" ? maintenanceServices : seoServices).map(
-              (svc, i) => (
-                <div
-                  key={svc.name}
-                  className={`rounded-2xl p-6 flex flex-col justify-between border transition-all ${
-                    svc.featured
-                      ? "bg-surface border-[#D6B98C] shadow-md ring-1 ring-[#D6B98C]/30"
-                      : "bg-surface border-border hover:border-foreground/30"
-                  }`}
-                  style={{ animationDelay: `${i * 60}ms` }}
-                >
-                  <div>
-                    <div className="flex items-center justify-between mb-3">
-                      <h4 className="text-base font-medium text-foreground">{svc.name}</h4>
-                      {svc.badge && (
-                        <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-[#142B25] text-[#D6B98C]">
-                          {svc.badge}
-                        </span>
-                      )}
-                    </div>
-
-                    <div className="flex items-baseline gap-1 mb-3">
-                      <span className="text-3xl font-normal text-foreground">{svc.price}</span>
-                      <span className="text-xs text-body">/ {svc.period}</span>
-                    </div>
-
-                    <p className="text-xs text-body mb-5">{svc.description}</p>
-
-                    <div className="h-px bg-border w-full mb-4" />
-
-                    <ul className="space-y-2 mb-6">
-                      {svc.features.map((feat, fi) => (
-                        <li key={fi} className="flex items-start gap-2 text-xs text-foreground/85">
-                          <span className="h-4 w-4 rounded-full bg-[#142B25]/10 text-[#142B25] flex items-center justify-center shrink-0 mt-0.5">
-                            <HugeiconsIcon icon={Tick01Icon} size={10} />
-                          </span>
-                          <span>{feat}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <Link
-                    to="/contact"
-                    className={`w-full inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-semibold transition-all ${
-                      svc.featured
-                        ? "bg-[#142B25] text-white hover:bg-[#142B25]/90"
-                        : "bg-background border border-border text-foreground hover:bg-[#142B25] hover:text-white hover:border-[#142B25]"
-                    }`}
-                  >
-                    {svc.cta}
-                    <HugeiconsIcon icon={ArrowRight01Icon} size={13} />
-                  </Link>
-                </div>
-              ),
-            )}
-          </div>
-
-          {/* Need something different? Custom Quote */}
-          <div className="mt-10 rounded-2xl bg-background border border-border p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-            <div className="max-w-xl">
-              <span className="text-xs font-semibold uppercase tracking-wider text-[#142B25] mb-1.5 block">
-                Tailored Solutions
-              </span>
-              <h4 className="text-lg sm:text-xl font-normal text-foreground">
-                Need something different?
-              </h4>
-              <p className="mt-1.5 text-xs sm:text-sm text-body leading-relaxed">
-                Every real estate business has different needs. If you require a custom website,
-                additional functionality or a combination of services, let's discuss a solution that
-                works for your business.
-              </p>
-            </div>
-            <Link
-              to="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#142B25] text-white text-xs sm:text-sm font-semibold hover:bg-[#142B25]/90 transition-colors shrink-0 shadow-sm"
-            >
-              Request a Custom Quote
-              <HugeiconsIcon icon={ArrowRight01Icon} size={14} />
-            </Link>
-          </div>
+          <Link
+            to="/contact"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#142B25] text-white text-xs sm:text-sm font-semibold hover:bg-[#142B25]/90 transition-colors shrink-0 shadow-sm"
+          >
+            Request a Custom Quote
+            <HugeiconsIcon icon={ArrowRight01Icon} size={14} />
+          </Link>
         </div>
       </section>
 

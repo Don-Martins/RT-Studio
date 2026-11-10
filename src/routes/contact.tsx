@@ -1,18 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { HugeiconsIcon } from "@hugeicons/react";
-import {
-  NewTwitterIcon,
-  Linkedin02Icon,
-  Github01Icon,
-  DribbbleIcon,
-  Mail01Icon,
-  ArrowRight01Icon,
-} from "@hugeicons/core-free-icons";
+import { Mail01Icon, ArrowRight01Icon, InstagramIcon } from "@hugeicons/core-free-icons";
 import { SiteShell } from "@/components/site-shell";
 import { siteConfig } from "@/data/config";
 import { toast } from "sonner";
-import { getCalApi } from "@calcom/embed-react";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -32,47 +24,8 @@ export const Route = createFileRoute("/contact")({
   component: Contact,
 });
 
-const socials = [
-  {
-    label: "X / Twitter",
-    sublabel: "@yourhandle",
-    icon: NewTwitterIcon,
-    href: siteConfig.socials.x,
-    color: "#000000",
-  },
-  {
-    label: "LinkedIn",
-    sublabel: "Connect professionally",
-    icon: Linkedin02Icon,
-    href: siteConfig.socials.linkedin,
-    color: "#0A66C2",
-  },
-  {
-    label: "Dribbble",
-    sublabel: "Design shots & work",
-    icon: DribbbleIcon,
-    href: siteConfig.socials.dribbble,
-    color: "#EA4C89",
-  },
-  {
-    label: "GitHub",
-    sublabel: "Open source & code",
-    icon: Github01Icon,
-    href: siteConfig.socials.github,
-    color: "#333333",
-  },
-];
-
 function Contact() {
   const [sending, setSending] = useState(false);
-
-  useEffect(() => {
-    if (!siteConfig.calLink) return;
-    (async function () {
-      const cal = await getCalApi({ namespace: "30min" });
-      cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
-    })();
-  }, []);
 
   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -97,87 +50,61 @@ function Contact() {
         </p>
       </section>
 
-      {/* Email CTA */}
-      <a
-        href={`mailto:${siteConfig.email}`}
-        className="panel px-6 sm:px-12 py-8 flex items-center justify-between gap-4 hover:bg-foreground hover:text-background group transition-colors animate-fade-up delay-100"
-      >
-        <div className="flex items-center gap-4">
-          <span className="h-11 w-11 rounded-xl bg-background group-hover:bg-background/10 flex items-center justify-center transition-colors">
-            <HugeiconsIcon icon={Mail01Icon} size={20} />
-          </span>
-          <div>
-            <div className="font-medium text-sm">Send an email</div>
-            <div className="text-body text-sm group-hover:text-background/60 transition-colors">
-              {siteConfig.email}
+      {/* Direct Contact Channels: Email & Instagram */}
+      <section className="grid grid-cols-1 sm:grid-cols-2 gap-4 animate-fade-up delay-100">
+        <a
+          href={`mailto:${siteConfig.email}`}
+          className="panel px-6 py-6 flex items-center justify-between gap-4 hover:bg-foreground hover:text-background group transition-colors"
+        >
+          <div className="flex items-center gap-4 min-w-0">
+            <span className="h-12 w-12 rounded-xl bg-background group-hover:bg-background/10 flex items-center justify-center shrink-0 transition-colors">
+              <HugeiconsIcon icon={Mail01Icon} size={22} />
+            </span>
+            <div className="min-w-0">
+              <div className="font-medium text-sm">Send an email</div>
+              <div className="text-body text-sm group-hover:text-background/60 transition-colors truncate">
+                {siteConfig.email}
+              </div>
             </div>
           </div>
-        </div>
-        <HugeiconsIcon
-          icon={ArrowRight01Icon}
-          size={18}
-          className="text-body group-hover:text-background group-hover:translate-x-1 transition-all"
-        />
-      </a>
+          <HugeiconsIcon
+            icon={ArrowRight01Icon}
+            size={18}
+            className="text-body group-hover:text-background group-hover:translate-x-1 transition-all shrink-0"
+          />
+        </a>
 
-      {/* Book a call */}
-      {siteConfig.calLink && (
-        <section className="panel px-6 sm:px-10 py-10 animate-fade-up delay-200">
-          <h2 className="text-xl font-medium mb-1.5">Book a consultation</h2>
-          <p className="text-body text-sm max-w-md mb-6">
-            Prefer a direct conversation? Schedule a 30-minute consultation to discuss your property
-            business goals.
-          </p>
-          <button
-            data-cal-namespace="30min"
-            data-cal-link={siteConfig.calLink}
-            data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-background border border-border text-sm font-medium hover:bg-foreground hover:text-background transition-colors"
-          >
-            Schedule 30-min consultation
-            <HugeiconsIcon icon={ArrowRight01Icon} size={14} />
-          </button>
-        </section>
-      )}
-
-      {/* Social links */}
-      <section className="animate-fade-up delay-300">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {socials
-            .filter((s) => s.href)
-            .map((s) => (
-              <a
-                key={s.label}
-                href={s.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="panel px-5 py-5 flex items-center gap-4 hover:bg-foreground hover:text-background group transition-colors"
-              >
-                <span
-                  className="h-10 w-10 rounded-xl flex items-center justify-center shrink-0 transition-colors"
-                  style={{ backgroundColor: `${s.color}15` }}
-                >
-                  <HugeiconsIcon
-                    icon={s.icon}
-                    size={18}
-                    style={{ color: s.color }}
-                    className="group-hover:text-background transition-colors"
-                  />
-                </span>
-                <div className="flex-1 min-w-0">
-                  <div className="font-medium text-sm">{s.label}</div>
-                  <div className="text-xs text-body group-hover:text-background/60 transition-colors truncate">
-                    {s.sublabel}
-                  </div>
-                </div>
-                <HugeiconsIcon
-                  icon={ArrowRight01Icon}
-                  size={16}
-                  className="text-body group-hover:text-background group-hover:translate-x-0.5 transition-all shrink-0"
-                />
-              </a>
-            ))}
-        </div>
+        <a
+          href={siteConfig.socials.instagram}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="panel px-6 py-6 flex items-center justify-between gap-4 hover:bg-foreground hover:text-background group transition-colors"
+        >
+          <div className="flex items-center gap-4 min-w-0">
+            <span
+              className="h-12 w-12 rounded-xl flex items-center justify-center shrink-0 transition-colors"
+              style={{ backgroundColor: "#E1306C15" }}
+            >
+              <HugeiconsIcon
+                icon={InstagramIcon}
+                size={22}
+                style={{ color: "#E1306C" }}
+                className="group-hover:text-background transition-colors"
+              />
+            </span>
+            <div className="min-w-0">
+              <div className="font-medium text-sm">Follow on Instagram</div>
+              <div className="text-body text-sm group-hover:text-background/60 transition-colors truncate">
+                @rtstudio82
+              </div>
+            </div>
+          </div>
+          <HugeiconsIcon
+            icon={ArrowRight01Icon}
+            size={18}
+            className="text-body group-hover:text-background group-hover:translate-x-1 transition-all shrink-0"
+          />
+        </a>
       </section>
 
       {/* Contact form */}

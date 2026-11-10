@@ -29,7 +29,8 @@ const footerSocials = [
     key: "instagram",
     icon: InstagramIcon,
     label: "Instagram",
-    href: siteConfig.socials.instagram || "https://instagram.com/rtstudio",
+    href:
+      siteConfig.socials.instagram || "https://www.instagram.com/rtstudio82?exln=bzY2dGpub2IyOTN3",
   },
 ] as const;
 
