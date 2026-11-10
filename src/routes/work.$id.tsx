@@ -26,21 +26,29 @@ export const Route = createFileRoute("/work/$id")({
       ],
     };
   },
-  errorComponent: ({ error }) => (
-    <SiteShell>
-      <section className="panel px-6 sm:px-12 py-20 text-center animate-fade-up">
-        <h1 className="text-[40px] font-light tracking-tight">Something went wrong</h1>
-        <p className="mt-3 text-body text-sm">{error.message}</p>
-        <Link
-          to="/work"
-          className="mt-6 inline-flex items-center gap-2 text-sm text-body hover:text-foreground transition-colors"
-        >
-          <HugeiconsIcon icon={ArrowLeft01Icon} size={16} />
-          Back to Work
-        </Link>
-      </section>
-    </SiteShell>
-  ),
+  errorComponent: ({ error }) => {
+    const message =
+      error instanceof Error
+        ? error.message
+        : typeof error === "string"
+          ? error
+          : "An unexpected error occurred";
+    return (
+      <SiteShell>
+        <section className="panel px-6 sm:px-12 py-20 text-center animate-fade-up">
+          <h1 className="text-[40px] font-light tracking-tight">Something went wrong</h1>
+          <p className="mt-3 text-body text-sm">{message}</p>
+          <Link
+            to="/work"
+            className="mt-6 inline-flex items-center gap-2 text-sm text-body hover:text-foreground transition-colors"
+          >
+            <HugeiconsIcon icon={ArrowLeft01Icon} size={16} />
+            Back to Work
+          </Link>
+        </section>
+      </SiteShell>
+    );
+  },
   component: WorkDetail,
 });
 
