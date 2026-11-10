@@ -31,11 +31,11 @@ function Work() {
         <div className="flex items-end justify-between flex-wrap gap-6">
           <div>
             <h1 className="text-[40px] sm:text-[60px] leading-[1.05] font-light tracking-tight">
-              Real Estate Work
+              Selected Projects
             </h1>
             <p className="mt-3 text-body text-sm max-w-md">
-              A showcase of website designs, listing platforms, and digital solutions created for
-              estate agencies, brokers, and developers.
+              A collection of websites, listing platforms, and digital projects created for real
+              estate agencies and property developers.
             </p>
           </div>
           <div className="text-sm text-body">{works.length} projects</div>

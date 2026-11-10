@@ -33,7 +33,7 @@ export const works: Work[] = [
     client: "Concept Project",
     service: "Listing Website Development",
     about:
-      "A complete property listing website concept designed to solve slow, confusing property searches. Features neighborhood filters, high-resolution photo galleries, clear property specifications, and direct viewing enquiry forms.",
+      "A fast property listing website designed for effortless home searches. Includes neighborhood filters, photo galleries, clear property details, and direct viewing enquiry forms.",
   },
   {
     id: "meridian-heights",
@@ -44,7 +44,7 @@ export const works: Work[] = [
     client: "Concept Project",
     service: "Development Showcase",
     about:
-      "A project showcase website concept created for off-plan residential developments. Built to present architectural renders, downloadable floor plans, local amenity guides, and a streamlined private viewing booking system.",
+      "A dedicated showcase website for a new residential development. Built to present architectural renders, downloadable floor plans, area amenities, and an easy booking form for private viewings.",
   },
   {
     id: "oakwood-partners",
@@ -55,7 +55,7 @@ export const works: Work[] = [
     client: "Concept Project",
     service: "Website Redesign & SEO",
     about:
-      "An agency website concept built to modernise outdated realtor sites. Focuses on mobile navigation, agent profile directories, local market guides, and simple valuation request forms for prospective sellers.",
+      "A modern agency website built for smooth mobile browsing. Features agent profile directories, local market guides, and a quick property valuation request form.",
   },
   {
     id: "avenue-management",
@@ -66,7 +66,7 @@ export const works: Work[] = [
     client: "Concept Project",
     service: "Management Portal & Web",
     about:
-      "A digital platform concept designed to separate landlord services from tenant resources. Features clear management fee structures, available rental listings, and straightforward tenant maintenance reporting pathways.",
+      "A clean website for a property management firm. Clearly separates landlord services from available rentals, with simple forms for maintenance requests and tenant enquiries.",
   },
   {
     id: "vanguard-commercial",
@@ -77,7 +77,7 @@ export const works: Work[] = [
     client: "Concept Project",
     service: "Commercial Listing Design",
     about:
-      "A commercial brokerage website concept tailored for office, industrial, and retail spaces. Solves the challenge of presenting lease terms, square footage filters, and PDF brochure downloads clearly on mobile devices.",
+      "A commercial brokerage website built for office and retail spaces. Makes it easy for investors to filter by square footage, check lease terms, and download property brochures.",
   },
   {
     id: "solstice-residences",
@@ -88,6 +88,6 @@ export const works: Work[] = [
     client: "Concept Project",
     service: "Speed & Performance Redesign",
     about:
-      "A performance-focused website redesign concept for luxury coastal properties. Replaces heavy, sluggish page loads with fast-loading imagery and instant inquiry actions so high-value buyers experience zero lag.",
+      "A fast-loading portfolio website for high-end coastal properties. Features lightweight image galleries and quick enquiry buttons so buyers can explore homes without lag.",
   },
 ];

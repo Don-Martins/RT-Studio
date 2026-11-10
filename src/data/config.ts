@@ -9,13 +9,13 @@ export const siteConfig = {
   name: "RT Studio",
 
   /** Short role label shown under your name in the hero */
-  role: "Real Estate Website Design & Digital Solutions",
+  role: "Websites for Real Estate Businesses",
 
   /** Hero headline — keep it under 60 characters */
-  tagline: "Modern websites designed for real estate businesses.",
+  tagline: "Clean, fast websites for real estate agencies and developers.",
 
   /** 1-2 sentence bio used in the footer and meta description */
-  bio: "RT Studio is a digital agency specialising in website design, property listing development, SEO, and ongoing management for the real estate industry.",
+  bio: "RT Studio builds clean, fast websites for real estate agencies, brokers and property developers to showcase listings and attract serious buyers.",
 
   /** Contact email shown on the contact page and in the footer */
   email: "rtstudio82@gmail.com",

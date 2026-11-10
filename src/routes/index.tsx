@@ -40,113 +40,95 @@ export const Route = createFileRoute("/")({
 const services = [
   {
     icon: ComputerIcon,
-    title: "Real Estate Website Design",
-    desc: "Custom-built agency websites with modern layouts and clean branding. Solves dated, generic web pages by giving your business a distinctive, credible presence.",
+    title: "Agency Website Design",
+    desc: "Custom websites designed for real estate agencies. Clean branding, modern layouts, and built to make a strong first impression on clients.",
     tag: "Web Design",
   },
   {
     icon: DeliveryBox01Icon,
-    title: "Property Listing Websites",
-    desc: "Intuitive listing showcases with high-res galleries, floor plans, and filters. Solves difficult property discovery so buyers and renters can easily explore available homes.",
+    title: "Property Listing Showcases",
+    desc: "Dedicated listing pages with high-resolution photo galleries, floor plans, and filters so buyers can easily browse available properties.",
     tag: "Listings",
   },
   {
     icon: Search01Icon,
-    title: "Website SEO Optimisation",
-    desc: "Technical and local search optimisation for your target areas. Solves low Google visibility so local sellers and buyers find your agency ahead of competitors.",
+    title: "Local Search & SEO",
+    desc: "Technical setup and local search optimisation to help nearby buyers and sellers find your agency easily on Google.",
     tag: "SEO",
   },
   {
     icon: CustomerService01Icon,
-    title: "Website Maintenance & Updates",
-    desc: "Ongoing technical care, security patches, backups, and listing updates. Solves the risk of broken features and downtime without you needing any technical know-how.",
+    title: "Website Maintenance",
+    desc: "Regular updates, security monitoring, and backups so your website stays secure, fast, and runs without downtime.",
     tag: "Support",
   },
   {
     icon: PaintBrush02Icon,
-    title: "Website Redesign",
-    desc: "Transforming older, slow real estate sites into high-converting digital platforms. Solves high bounce rates and lost leads caused by outdated web designs.",
+    title: "Website Redesigns",
+    desc: "Upgrading slow or outdated websites into modern, mobile-friendly platforms that represent your agency properly.",
     tag: "Redesign",
   },
   {
     icon: Rocket01Icon,
-    title: "Speed & Performance",
-    desc: "Accelerating image-heavy listing pages and scripts for mobile users. Solves slow loading times so prospective clients never leave out of frustration.",
+    title: "Speed & Mobile Performance",
+    desc: "Fast-loading pages and smooth navigation so mobile visitors can explore property listings without waiting.",
     tag: "Speed",
   },
 ];
 
 const designPackages = [
   {
-    num: "01",
-    name: "Starter Presence",
+    name: "Essential",
     price: "$499",
     period: "project",
-    description:
-      "A professional starting point for independent real estate agents and small agencies looking to establish their presence online.",
+    description: "A clean, professional website for independent realtors and boutique agencies.",
     features: [
       "Up to 5 website pages",
-      "Custom website design",
-      "About and services pages",
-      "Property showcase section",
-      "Contact and enquiry form",
+      "Property showcase",
+      "Image galleries",
       "WhatsApp integration",
+      "Contact form",
       "Mobile-friendly design",
-      "Basic on-page SEO",
-      "Social media integration",
-      "Website launch and testing",
+      "Basic SEO",
     ],
-    cta: "Get Started",
+    cta: "Choose Essential",
     featured: false,
   },
   {
-    num: "02",
-    name: "Business Growth",
+    name: "Professional",
     price: "$999",
     period: "project",
     badge: "Most Popular",
-    description:
-      "A more complete website experience for growing real estate agencies that want to showcase multiple properties and attract more enquiries.",
+    description: "The complete setup for growing agencies showcasing multiple listings.",
     features: [
       "Up to 10 website pages",
-      "Everything in Starter Presence",
-      "Property listing pages",
-      "Individual property detail pages",
-      "Property image galleries",
-      "Property search and basic filters",
-      "Agent profile section",
-      "Blog or property insights section",
-      "Enhanced on-page SEO",
-      "Google Analytics integration",
-      "Website speed optimisation",
-      "30-day post-launch support",
+      "Everything in Essential",
+      "Property detail pages",
+      "Property search and filters",
+      "Agent profiles",
+      "Blog section",
+      "Google Maps integration",
+      "Advanced SEO",
     ],
-    cta: "Choose Business Growth",
+    cta: "Choose Professional",
     featured: true,
   },
   {
-    num: "03",
-    name: "Premium Estate",
+    name: "Premium",
     price: "$1,999+",
     period: "project",
-    description:
-      "A comprehensive digital solution for established real estate agencies, property developers and businesses with larger property portfolios.",
+    description: "Advanced features for established brokerages and property developers.",
     features: [
-      "Custom multi-page website",
-      "Everything in Business Growth",
-      "Advanced property listing system",
-      "Advanced property search and filters",
-      "Property category management",
-      "Dedicated agent profiles",
-      "Interactive map integration",
-      "Property enquiry management",
-      "Advanced SEO setup",
-      "Performance optimisation",
-      "Analytics integration",
-      "Custom functionality based on business needs",
-      "60-day post-launch support",
+      "Custom website design",
+      "Everything in Professional",
+      "Advanced property search",
+      "Property management system",
+      "Multiple agent profiles",
+      "Advanced enquiry forms",
+      "Technical SEO",
+      "30-day support",
     ],
-    cta: "Discuss Your Project",
+    cta: "Choose Premium",
     featured: false,
   },
 ];
@@ -154,42 +136,42 @@ const designPackages = [
 const testimonials = [
   {
     quote:
-      "RT Studio gave our estate agency a modern web presence that showcases our high-end listings effortlessly. The feedback from vendors has been exceptional.",
+      "RT Studio gave our estate agency a modern website that showcases our properties effortlessly. The feedback from vendors and buyers has been excellent.",
     name: "Marcus Vance",
     role: "Managing Director, Vance & Co. Realty",
     seed: "marcus",
   },
   {
     quote:
-      "The property showcase site they delivered for our new residential development was fast, sleek, and generated private viewing bookings from day one.",
+      "The showcase website for our new residential development was clean, fast, and brought in viewing enquiries from the very first week.",
     name: "Elena Rostova",
     role: "Marketing Director, Horizon Developments",
     seed: "elena",
   },
   {
     quote:
-      "Our old website took eight seconds to load on mobile phones. RT Studio rebuilt it from scratch and now properties load instantly. It made a huge difference.",
+      "Our old website took eight seconds to load on mobile phones. RT Studio rebuilt it from scratch, and now listings load instantly. It made a real difference.",
     name: "David Adeleke",
     role: "Principal Broker, Prime Commercial",
     seed: "david",
   },
   {
     quote:
-      "The ongoing maintenance package gives us total peace of mind. Whenever we have a new development or team update, they handle it promptly.",
+      "Their ongoing support gives us total peace of mind. Whenever we have new properties or team updates, they take care of it promptly.",
     name: "Sarah Jenkins",
     role: "Operations Head, Jenkins Property Management",
     seed: "sarah",
   },
   {
     quote:
-      "Clear communication, zero tech jargon, and an agency that truly understands what real estate buyers and sellers expect from a modern website.",
+      "Clear communication, no tech jargon, and a team that truly understands what real estate buyers and sellers expect from a modern website.",
     name: "Priya Sharma",
     role: "Independent Realtor",
     seed: "priya",
   },
   {
     quote:
-      "Our valuation enquiry submissions doubled within months of launching our redesigned website. Clean layout, intuitive navigation, and reliable support.",
+      "Our property enquiry submissions doubled within months of launching our new website. Clean layout, easy to navigate, and reliable ongoing support.",
     name: "Julian Taylor",
     role: "Partner, Taylor & White Estates",
     seed: "julian",
@@ -199,35 +181,35 @@ const testimonials = [
 const faqs = [
   {
     q: "Why does my real estate business need a website?",
-    a: "A professional website gives your agency immediate credibility and serves as your 24/7 digital office. When prospective buyers, sellers, or landlords hear about your business, they search for you online. A dedicated website ensures you control your brand, showcase properties effectively, and capture direct enquiries without relying solely on third-party portals.",
+    a: "A dedicated website gives your business instant credibility and acts as your 24/7 digital office. When clients search for your agency, a professional site lets you control your brand, showcase properties directly, and collect enquiries without relying only on property portals.",
   },
   {
-    q: "Can I display properties available for sale and rent?",
-    a: "Yes. We create structured property listings where you can present available homes, commercial units, or rentals with clear photographs, key specifications, pricing, and location details. Visitors can easily filter listings by property type and status.",
+    q: "Can I display properties for sale and rent?",
+    a: "Yes. We create clean property listing pages with high-resolution photos, key features, pricing, and locations. Visitors can easily filter listings by property type and status.",
   },
   {
-    q: "Can customers contact me directly through my website?",
-    a: "Yes. Every property page and contact section includes direct enquiry forms, click-to-call buttons, and direct WhatsApp or email links, allowing interested buyers and tenants to reach your team immediately.",
+    q: "How do potential clients contact my team?",
+    a: "Every listing and page includes direct enquiry forms, click-to-call buttons, and direct WhatsApp or email links, so interested clients can reach your team immediately.",
   },
   {
-    q: "Will my website work on mobile phones?",
-    a: "Yes. Over 60% of property buyers browse listings on smartphones. Every website we build is fully responsive, ensuring fast loading and smooth navigation on phones, tablets, and desktop computers.",
+    q: "Will my website work well on mobile phones?",
+    a: "Yes. Most property searches happen on smartphones. Every website we build is fully responsive, meaning it looks sharp and loads quickly on phones, tablets, and computers.",
   },
   {
     q: "Can my website appear on Google?",
-    a: "Yes. We set up all necessary technical SEO foundations so search engines can index your pages. While search positions depend on content and local competition, we structure your site so your business name, services, and location are easily discoverable.",
+    a: "Yes. We set up all key SEO foundations so search engines can easily find and index your pages, helping local buyers and sellers discover your agency.",
   },
   {
-    q: "Do you provide website maintenance and ongoing management?",
-    a: "Yes. We offer ongoing maintenance packages covering security updates, technical monitoring, regular backups, and content updates such as adding new listings or team members.",
+    q: "Do you provide website maintenance after launch?",
+    a: "Yes. We take care of technical monitoring, security updates, regular backups, and content updates like adding new property listings or team members.",
   },
   {
-    q: "Can you redesign my existing website?",
-    a: "Yes. If your current website is slow, outdated, or difficult to use on mobile devices, we can redesign it from scratch while keeping your existing domain name and preserving your valuable content.",
+    q: "Can you redesign our existing website?",
+    a: "Yes. If your current website is slow, outdated, or difficult to use on phones, we can redesign it from the ground up while keeping your existing web address and content.",
   },
   {
-    q: "How do I get started?",
-    a: "Simply get in touch via our contact page or schedule an introductory consultation. We will discuss your real estate business goals, recommend the ideal website structure, and provide a clear proposal.",
+    q: "How do we get started?",
+    a: "Send us a message through our contact page or email us. We will discuss your goals, recommend the right package, and send a clear proposal to get started.",
   },
 ];
 
@@ -373,7 +355,7 @@ function Index() {
           <div className="relative z-10 w-full max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12 pt-32 sm:pt-36 lg:pt-28 pb-16 sm:pb-20">
             <div className="max-w-2xl">
               <h1 className="text-[36px] sm:text-[48px] lg:text-[60px] leading-[1.08] font-normal tracking-tight text-white font-serif">
-                A Better Digital Presence for Real Estate Brands.
+                Websites Built for Real Estate Businesses.
               </h1>
 
               <p className="mt-5 sm:mt-6 text-[#F7F5F0]/90 text-base sm:text-lg lg:text-xl leading-relaxed font-sans max-w-xl">
@@ -386,7 +368,7 @@ function Index() {
                   to="/contact"
                   className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-[#D6B98C] text-[#142B25] font-semibold text-sm sm:text-base hover:brightness-105 hover:shadow-lg transition-all shadow-md text-center"
                 >
-                  Work With Us
+                  Get in Touch
                   <HugeiconsIcon icon={ArrowRight01Icon} size={16} />
                 </Link>
                 <Link
@@ -410,14 +392,14 @@ function Index() {
               Recent Real Estate Work
             </h2>
             <p className="mt-1 text-xs text-body">
-              Concept projects for property agencies and developers · Click to view
+              Selected projects for estate agencies and developers · Click any card to explore
             </p>
           </div>
           <Link
             to="/work"
             className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-background border border-border text-sm font-medium hover:bg-foreground hover:text-background transition-colors"
           >
-            Explore Our Work
+            View All Projects
             <HugeiconsIcon icon={ArrowRight01Icon} size={14} />
           </Link>
         </div>
@@ -485,14 +467,14 @@ function Index() {
         <div className="flex items-end justify-between flex-wrap gap-4 mb-10">
           <div>
             <p className="text-xs font-semibold tracking-widest uppercase text-body mb-2">
-              Our Expertise
+              What We Do
             </p>
             <h2 className="text-3xl sm:text-4xl font-light tracking-tight">
-              Real Estate Digital Services
+              Digital Services for Real Estate
             </h2>
           </div>
-          <p className="text-body text-sm max-w-[240px] text-right hidden sm:block">
-            Designed specifically for agencies, brokers, and developers.
+          <p className="text-body text-sm max-w-[260px] text-right hidden sm:block">
+            Everything you need to showcase listings, build trust, and win clients.
           </p>
         </div>
 
@@ -529,15 +511,14 @@ function Index() {
         <div className="flex items-end justify-between flex-wrap gap-4 mb-10">
           <div>
             <p className="text-xs font-semibold tracking-widest uppercase text-body mb-2">
-              Website Design Packages
+              Pricing Packages
             </p>
             <h2 className="text-3xl sm:text-4xl font-normal tracking-tight">
               Website Design Packages
             </h2>
             <p className="mt-2 text-body text-sm max-w-xl leading-relaxed">
-              Professional websites designed to help real estate businesses showcase properties,
-              build trust and attract potential clients. Choose a package that fits your business
-              and where you want to go.
+              Clear, fixed packages tailored for real estate agencies and developers. Choose the
+              right fit for your business.
             </p>
           </div>
         </div>
@@ -557,14 +538,7 @@ function Index() {
               >
                 <div className="p-7 flex flex-col flex-1">
                   {/* Package header */}
-                  <div className="flex items-center justify-between mb-4">
-                    <span
-                      className={`text-xs font-semibold tracking-wider uppercase ${
-                        isFeatured ? "text-[#D6B98C]" : "text-body"
-                      }`}
-                    >
-                      Package {pkg.num}
-                    </span>
+                  <div className="flex items-center justify-end mb-4 min-h-[24px]">
                     {pkg.badge && (
                       <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-[#D6B98C] text-[#142B25]">
                         {pkg.badge}
@@ -655,15 +629,14 @@ function Index() {
         <div className="mt-12 rounded-2xl bg-background border border-border p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div className="max-w-xl">
             <span className="text-xs font-semibold uppercase tracking-wider text-[#142B25] mb-1.5 block">
-              Tailored Solutions
+              Custom Projects
             </span>
             <h4 className="text-lg sm:text-xl font-normal text-foreground">
               Need something different?
             </h4>
             <p className="mt-1.5 text-xs sm:text-sm text-body leading-relaxed">
-              Every real estate business has different needs. If you require a custom website,
-              additional functionality or a combination of services, let's discuss a solution that
-              works for your business.
+              Every real estate business is unique. If you need bespoke property search tools,
+              multi-branch setups, or custom integrations, we're happy to tailor a solution for you.
             </p>
           </div>
           <Link
@@ -708,7 +681,7 @@ function Index() {
             </h2>
           </div>
           <p className="text-body text-sm max-w-[240px] text-right hidden sm:block">
-            Clear answers to help you choose the right digital solution.
+            Clear answers about our websites, process, and ongoing support.
           </p>
         </div>
         <div className="divide-y divide-border">
@@ -746,17 +719,17 @@ function Index() {
           Start Your Project
         </p>
         <h2 className="text-4xl sm:text-5xl font-light tracking-tight max-w-lg mx-auto">
-          Ready to elevate your real estate brand online?
+          Ready to upgrade your real estate website?
         </h2>
         <p className="mt-4 text-body text-sm max-w-md mx-auto leading-relaxed">
-          Whether you need a new agency website, an interactive property listing showcase, or
-          ongoing website maintenance, RT Studio is here to help your business stand out.
+          Let's build a clean, fast website that showcases your properties and helps you attract
+          serious buyers.
         </p>
         <Link
           to="/contact"
           className="mt-8 inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-foreground text-background text-sm font-medium hover:opacity-90 transition-opacity"
         >
-          Book a Consultation
+          Get in Touch
           <HugeiconsIcon icon={ArrowRight01Icon} size={15} />
         </Link>
       </section>

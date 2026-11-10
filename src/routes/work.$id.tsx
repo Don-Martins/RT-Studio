@@ -105,9 +105,8 @@ function WorkDetail() {
                   Concept Project Showcase
                 </div>
                 <p className="text-base font-medium leading-relaxed text-foreground">
-                  Created to demonstrate modern real estate web design: effortless property
-                  exploration, high-resolution imagery, and fast enquiry pathways for buyers and
-                  renters.
+                  Built to show what a modern real estate website should feel like: fast, easy to
+                  navigate, with high-quality photos and quick enquiry forms for buyers and tenants.
                 </p>
               </div>
               <div className="mt-8 flex items-center gap-3">

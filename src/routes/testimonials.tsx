@@ -26,7 +26,7 @@ export const Route = createFileRoute("/testimonials")({
 const items = [
   {
     quote:
-      "RT Studio gave our estate agency a modern web presence that showcases our high-end listings effortlessly. The feedback from vendors has been exceptional.",
+      "RT Studio gave our estate agency a modern website that showcases our properties effortlessly. The feedback from vendors and buyers has been excellent.",
     name: "Marcus Vance",
     role: "Managing Director, Vance & Co. Realty",
     seed: "marcus",
@@ -34,7 +34,7 @@ const items = [
   },
   {
     quote:
-      "The property showcase site they delivered for our new residential development was fast, sleek, and generated private viewing bookings from day one.",
+      "The showcase website for our new residential development was clean, fast, and brought in viewing enquiries from the very first week.",
     name: "Elena Rostova",
     role: "Marketing Director, Horizon Developments",
     seed: "elena",
@@ -42,7 +42,7 @@ const items = [
   },
   {
     quote:
-      "Our old website took eight seconds to load on mobile phones. RT Studio rebuilt it from scratch and now properties load instantly. It made a huge difference.",
+      "Our old website took eight seconds to load on mobile phones. RT Studio rebuilt it from scratch, and now listings load instantly. It made a real difference.",
     name: "David Adeleke",
     role: "Principal Broker, Prime Commercial",
     seed: "david",
@@ -50,7 +50,7 @@ const items = [
   },
   {
     quote:
-      "The ongoing maintenance package gives us total peace of mind. Whenever we have a new development or team update, they handle it promptly.",
+      "Their ongoing support gives us total peace of mind. Whenever we have new properties or team updates, they take care of it promptly.",
     name: "Sarah Jenkins",
     role: "Operations Head, Jenkins Property Management",
     seed: "sarah",
@@ -58,7 +58,7 @@ const items = [
   },
   {
     quote:
-      "Clear communication, zero tech jargon, and an agency that truly understands what real estate buyers and sellers expect from a modern website.",
+      "Clear communication, no tech jargon, and a team that truly understands what real estate buyers and sellers expect from a modern website.",
     name: "Priya Sharma",
     role: "Independent Realtor",
     seed: "priya",
@@ -66,7 +66,7 @@ const items = [
   },
   {
     quote:
-      "Our valuation enquiry submissions doubled within months of launching our redesigned website. Clean layout, intuitive navigation, and reliable support.",
+      "Our property enquiry submissions doubled within months of launching our new website. Clean layout, easy to navigate, and reliable ongoing support.",
     name: "Julian Taylor",
     role: "Partner, Taylor & White Estates",
     seed: "julian",
@@ -79,11 +79,11 @@ function Testimonials() {
     <SiteShell>
       <section className="panel px-6 sm:px-12 py-12 lg:py-16 animate-fade-up text-center">
         <h1 className="text-[40px] sm:text-[60px] leading-[1.05] font-light tracking-tight">
-          Client Feedback
+          What Clients Say
         </h1>
         <p className="mt-4 text-body max-w-lg mx-auto text-sm">
-          Feedback from property professionals and business owners who partnered with RT Studio for
-          website design, listing platforms, and digital services.
+          Hear from real estate agents, brokers, and property developers who partnered with RT
+          Studio to build their websites and listing platforms.
         </p>
       </section>
 

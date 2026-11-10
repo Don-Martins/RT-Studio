@@ -26,43 +26,43 @@ export const Route = createFileRoute("/faq")({
 const faqs = [
   {
     q: "Why does my real estate business need a website?",
-    a: "A dedicated website establishes professional credibility and acts as your 24/7 digital office. When prospective buyers, sellers, or landlords hear about your business, the first thing they do is search for your name online. A professional website ensures you control your brand narrative, present your property listings attractively, and collect direct client enquiries without relying entirely on third-party property portals.",
+    a: "A dedicated website gives your business instant credibility and acts as your 24/7 digital office. When clients search for your agency, a professional site lets you control your brand, showcase properties directly, and collect enquiries without relying only on third-party property portals.",
   },
   {
-    q: "Can I display properties available for sale and rent?",
-    a: "Yes. We build clean, organised property listing sections where you can showcase available properties with high-resolution photo galleries, floor plans, key features, pricing, and location details. Visitors can easily filter properties by type, location, and status (for sale or rent).",
+    q: "Can I display properties for sale and rent?",
+    a: "Yes. We build clean, organised listing sections where you can showcase available properties with high-resolution photo galleries, floor plans, key features, pricing, and location details. Visitors can easily filter listings by type, location, and status.",
   },
   {
-    q: "Can customers contact me directly through my website?",
-    a: "Yes. Every property page and contact section includes direct enquiry forms, click-to-call phone buttons, and direct WhatsApp or email links, so interested clients can reach your team immediately without roadblocks.",
+    q: "How do clients contact my team through the website?",
+    a: "Every listing and page includes direct enquiry forms, click-to-call phone buttons, and direct WhatsApp or email links, so interested clients can reach your team immediately.",
   },
   {
-    q: "Will my website work on mobile phones?",
-    a: "Yes. More than 60% of real estate searches happen on mobile devices. Every website we design is fully responsive, meaning it automatically adjusts to look sharp and function smoothly on smartphones, tablets, laptops, and desktop computers.",
+    q: "Will my website work well on mobile phones?",
+    a: "Yes. More than 60% of real estate searches happen on mobile devices. Every website we build is fully responsive, meaning it loads quickly and functions smoothly on smartphones, tablets, and computers.",
   },
   {
     q: "Can my website appear on Google?",
-    a: "Yes. We implement the technical structure required for search engines like Google to find and index your website pages. While search ranking depends on continuous local activity and competition, we make sure your business name, services, and location are easily discoverable.",
+    a: "Yes. We set up all essential SEO foundations so search engines can easily find and index your pages, making your agency discoverable to local buyers and sellers.",
   },
   {
-    q: "What is website SEO?",
-    a: "SEO stands for Search Engine Optimisation. In everyday terms, it means structuring your website's content, page titles, headlines, and loading speed so search engines understand your services and show your website when people in your area search for real estate services.",
+    q: "What is website SEO in simple terms?",
+    a: "SEO (Search Engine Optimisation) means structuring your website's content, page titles, and speed so Google understands your business and displays your website when people search for real estate services in your area.",
   },
   {
-    q: "Do you provide website maintenance and management?",
-    a: "Yes. We offer ongoing website management packages covering technical monitoring, software and security updates, backups, and regular content adjustments, such as updating agent profiles or modifying service details.",
+    q: "Do you provide website maintenance and support?",
+    a: "Yes. We offer ongoing maintenance packages covering security updates, technical monitoring, regular backups, and content updates such as adding new property listings or updating team details.",
   },
   {
-    q: "Can you redesign my existing website?",
-    a: "Yes. If your current website is outdated, slow to load, or difficult to navigate on mobile devices, we can redesign it from the ground up while keeping your existing web address (domain) and preserving valuable information.",
+    q: "Can you redesign our existing website?",
+    a: "Yes. If your current website is slow, outdated, or difficult to use on mobile phones, we can redesign it from the ground up while keeping your existing web address and preserving valuable content.",
   },
   {
-    q: "What happens after my website is launched?",
-    a: "After launch, we give you a clear walkthrough of your new site. We also remain available for ongoing technical support, performance checks, and updates so your website continues running smoothly.",
+    q: "What happens after the website is launched?",
+    a: "We give you a complete walkthrough of your new site and provide ongoing technical support to ensure your website continues to run fast and securely.",
   },
   {
-    q: "How do I get started?",
-    a: "Getting started is straightforward. Send us a message through our contact page or schedule an introductory consultation. We will discuss your real estate business goals, recommend the right website approach, and provide a clear proposal.",
+    q: "How do we get started?",
+    a: "Send us a message through our contact page or email us. We will discuss your real estate business goals, recommend the right website approach, and send a clear proposal to get started.",
   },
 ];
 

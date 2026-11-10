@@ -42,11 +42,11 @@ function Contact() {
       {/* Header */}
       <section className="panel px-6 sm:px-12 py-12 lg:py-16 animate-fade-up">
         <h1 className="text-[40px] sm:text-[60px] leading-[1.05] font-light tracking-tight">
-          Let's discuss your project.
+          Let's talk about your project.
         </h1>
         <p className="mt-4 text-body max-w-lg">
-          Whether you are planning a new agency website, an interactive property listing showcase,
-          or ongoing website maintenance, RT Studio is here to help your real estate business grow.
+          Whether you need a new agency website, a property listing platform, or ongoing website
+          maintenance, we're ready to help.
         </p>
       </section>
 
@@ -151,7 +151,7 @@ function Contact() {
               name="message"
               required
               rows={5}
-              placeholder="Tell us about your real estate agency, current website, or upcoming property project..."
+              placeholder="Tell us about your agency, your current website, or what you'd like to build..."
               className="w-full px-4 py-3 rounded-xl bg-background border border-border text-sm placeholder:text-body focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-shadow resize-none"
             />
           </div>
@@ -160,7 +160,7 @@ function Contact() {
             disabled={sending}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-foreground text-background text-sm font-medium hover:opacity-90 transition-opacity disabled:opacity-50"
           >
-            {sending ? "Sending…" : "Send enquiry"}
+            {sending ? "Sending…" : "Send Enquiry"}
             {!sending && <HugeiconsIcon icon={ArrowRight01Icon} size={14} />}
           </button>
         </form>
